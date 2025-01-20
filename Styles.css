@@ -39,14 +39,20 @@ width: 100%;
 flex-direction: row;
 align-items: center;
 width: 50%;
-/* justify-content: center; */
 gap: 18px;
-/* background: #b64343; */
 }
 
 .logo{font-size: 36px;
   font-family: "dm sans";
 }
+
+.top a{text-decoration: none;
+color: white;
+transition: .2s;}
+
+.top a:hover{color: #cccccc;}
+
+.top a:active{color: #1A67CB;}
 
 .top .left .left-span{
   font-size: 16px;
@@ -413,6 +419,8 @@ transition: .2s;}
   font-weight: bold;
   transition: .2s;
 }
+
+.info li i{margin-right: 10px;}
 
 .socials{display: flex;
 gap: 10px;
