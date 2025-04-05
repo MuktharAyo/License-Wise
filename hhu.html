@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Active Nav on Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s ease;
+    }
+
+    nav a.active {
+      color: #007BFF;
+      border-color: #007BFF;
+    }
+
+    section {
+      height: 100vh;
+      padding: 100px 20px 20px;
+    }
+
+    #home { background: #f1f3f5; }
+    #about { background: #e9ecef; }
+    #services { background: #dee2e6; }
+    #contact { background: #ced4da; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home"><h1>Home</h1></section>
+<section id="about"><h1>About</h1></section>
+<section id="services"><h1>Services</h1></section>
+<section id="contact"><h1>Contact</h1></section>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let currentId = "";
+    sections.forEach((section) => {
+      if (window.scrollY >= section.offsetTop - 100) {
+        currentId = section.id;
+      }
+    });
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${currentId}`);
+    });
+  });
+</script>
+
+</body>
+</html>
