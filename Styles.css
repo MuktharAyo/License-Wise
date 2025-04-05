@@ -66,7 +66,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
 }
 nav .left{
@@ -136,7 +136,7 @@ nav .right {
   gap: 8px;
   font-family: var(--font-one);
 }
-nav .right hr {
+/* nav .right hr {
   border: 1px solid var(--secondary);
   height: 30px;
 }
@@ -144,7 +144,7 @@ nav .right hr {
   display: flex;
   align-items: center;
   gap: 3px;
-}
+} */
 .btn0 {
   color: var(--secondary);
   border: var(--brd);
@@ -823,7 +823,7 @@ footer {
   }
   #menu-toggle:checked ~ .nav-links {
     transform: translateY(0);
-    top: 50px;
+    top: 65px;
     opacity: 1;
     pointer-events: auto;
   }
