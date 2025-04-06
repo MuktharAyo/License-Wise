@@ -175,7 +175,7 @@ nav .right {
 #home {
   height: 600px;
   background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
-    url(/Assets/main-bg.jpg);
+    url(/Assets/main-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -816,7 +816,7 @@ footer {
     transform: translateY(-100%);
     pointer-events: none;
     opacity: 0;
-    transition: transform 0.5s cubic-bezier(1, 0.5, 0, 0), opacity 0.5s ease;
+    transition: transform 0.5s cubic-bezier(0, 0, 0.2, 0), opacity 0.5s ease;
   }
   .hamburger {
     display: flex;
@@ -835,7 +835,7 @@ footer {
     opacity: 0;
     transform: translateY(-50px);
     transition: transform 0.5s opacity 0.5s ease;
-    transition-delay: 0.4s;
+    transition-delay: 0.5s;
     border-top: 1px solid var(--secondary);
   }
   #menu-toggle:checked ~ .nav-links a {
