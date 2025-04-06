@@ -19,7 +19,6 @@ html {
   --font-one: "dm sans";
   --font-two: "nunito";
 
-  --brd:1px solid var(var(--secondary))
 }
 a {
   text-decoration: none;
@@ -48,7 +47,7 @@ section p {
   font-size: 16px;
   font-family: var(--font-one);
 }
-section .btn{
+section .btn {
   display: inline-block;
   border-radius: 5px;
   font-size: 16px;
@@ -69,17 +68,17 @@ nav {
   padding: 15px 0;
   position: relative;
 }
-nav .left{
-  transition: .2s;
+nav .left {
+  transition: 0.2s;
 }
- nav .left img{
+nav .left img {
   display: none;
-  transition: .2s;
- }
+  transition: 0.2s;
+}
 nav .logo {
   font-size: 36px;
   font-family: var(--font-one);
-  transition: .2s;
+  transition: 0.2s;
 }
 #menu-toggle {
   display: none;
@@ -151,7 +150,7 @@ nav .right {
   border: 1px solid var(--secondary);
   border-radius: 5px;
   padding: 8px 14px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .btn0:hover {
   color: var(--primary);
@@ -954,10 +953,10 @@ footer {
   section h3 {
     font-size: 24px;
   }
-  nav .left img{
+  nav .left img {
     display: block;
     width: 30px;
-   }
+  }
   nav .logo {
     display: none;
     font-size: 24px;
